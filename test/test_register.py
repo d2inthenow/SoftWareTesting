@@ -45,3 +45,5 @@ class TestRegister(Driver):
         assert "E-Mail Address does not appear to be valid!" in error_message3
         error_message4 = driver.find_element(By.XPATH, "/html/body/main/div[2]/div/div/form/fieldset[2]/div/div/div").text
         assert "Password must be between 4 and 20 characters!" in error_message4
+
+    
