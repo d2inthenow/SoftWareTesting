@@ -24,14 +24,14 @@ class TestNavigation(Driver):
     
     def test_wishlist(self,driver):
         login_page = Login(driver)
-        login_page.signIn('duong0023@gmail.com','12345')
+        login_page.signIn('aaa@gmail.com','12345')
         navigation = Navigation(driver)
         navigation.go_to_wishlist()
         assert "account/wishlist" in navigation.get_current_url()
 
     def test_checkout(self,driver):
         login_page = Login(driver)
-        login_page.signIn('nabee2412@gmail.com','12345')
+        login_page.signIn('aaa@gmail.com','12345')
         navigation = Navigation(driver)
         navigation.go_to_checkout()
         assert "checkout/cart" in navigation.get_current_url()
